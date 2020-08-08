@@ -171,7 +171,7 @@ for UPKG_LIST_NOW in ${UPKG_LISTS_READY}/* ; do
 	
 	echo -e "${FONT_CYAN}${FONT_BOLD}$((LIST_INDEX_NOW+1))/${LIST_INDEX_MAX} $((25*(${LIST_INDEX_NOW}*4+1)/LIST_INDEX_MAX))%${FONT_RESET}${FONT_YELLOW} Syncing${FONT_RESET}"
 	sync
-C
+
 	echo -e "${FONT_CYAN}${FONT_BOLD}$((LIST_INDEX_NOW+1))/${LIST_INDEX_MAX} $((25*(${LIST_INDEX_NOW}*4+2)/LIST_INDEX_MAX))%${FONT_RESET}${FONT_YELLOW} Check dependency & cleanup ${FONT_RESET}"
 	sudo apt-get install -f -y
 	sudo apt-get autoremove -y
